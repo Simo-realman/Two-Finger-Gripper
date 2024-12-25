@@ -56,17 +56,15 @@ The hardware system of the two-finger parallel gripper is shown in the following
 
 For single board fabrication, you can refer to the files under the `Hardware > Gerber` Files path in the available open-source files, or generate the corresponding Gerber files for single board fabrication through the **TURN PCB.PcbDoc** file under the `Hardware > PCB` path.
 
-::: warning Note
-The **Gerber Files** are recommended to be opened with **Huaqiu DFM** software, and the **TURN PCB.PcbDoc** is a PCB format file, which is recommended to be opened with **Altium Designer** software.
-:::
+>Note<br>
+>The **Gerber Files** are recommended to be opened with **Huaqiu DFM** software, and the **TURN PCB.PcbDoc** is a PCB format file, which is recommended to be opened with **Altium Designer** software.
 
 #### Component Soldering
 
 Component soldering can refer to the **PG_V0.SchDoc** file under the `Hardware > SCH` PCB path in the obtained open-source files, or the **BOT PCBV2** and **TOP PCBV2** files under the `Hardware` path for soldering.
 
-::: warning Note
-The **PG_V0.SchDoc** is an SCH format file, which is recommended to be opened with **Altium Designer** software.
-:::
+>Note<br>
+>The **PG_V0.SchDoc** is an SCH format file, which is recommended to be opened with **Altium Designer** software.
 
 ![元器件焊接图](doc/image13.png)
 
