@@ -53,17 +53,17 @@
 
 单板制作可参考获取的开源文件中`Hardware > Gerber Files`路径下的相关文件，或通过`Hardware > PCB`路径下的**TURN PCB20240806.PcbDoc**文件生成对应的Gerber文件进行单板制作。
 
-::: warning 注意
-**Gerber Files**推荐使用**华秋dfm**软件打开，**TURN PCB20240806.PcbDoc**为PCB格式文件，推荐使用**Altium Designer**软件打开。
-:::
+>注意<br>
+>**Gerber Files**推荐使用**华秋dfm**软件打开，**TURN PCB20240806.PcbDoc**为PCB格式文件，推荐使用**Altium Designer**软件打开。
+
 
 #### 焊接元器件
 
 元器件焊接可参考获取的开源文件中`Hardware > SCH`路径下的**PG_V0_20240806.SchDoc**文件，或`Hardware`路径下的**BOT PCBV2**和**TOP PCBV2**文件进行焊接。
 
-::: warning 注意
-**PG_V0_20240806.SchDoc**为SCH格式文件，推荐使用**Altium Designer**软件打开。
-:::
+>注意<br>
+>**PG_V0_20240806.SchDoc**为SCH格式文件，推荐使用**Altium Designer**软件打开。
+
 
 ![元器件焊接图](doc/image13.png)
 
