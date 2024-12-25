@@ -1,3 +1,9 @@
+<div align="right">
+  
+[中文简体](https://github.com/RealManRobot/Two-Finger-Gripper/tree/main/readme_CN.md)|[English](https://github.com/RealManRobot/Two-Finger-Gripper/tree/main/readme.md)
+
+</div>
+
 # <p class="hidden"> Open Source Project： </p> Two-Finger Parallel Gripper
 
 ## Copyright and License Agreement
