@@ -1,0 +1,84 @@
+pipeline {
+    agent {node "window"}
+    options {
+        timestamps ()
+        }
+     parameters { 
+            persistentString(name: 'toolversion', defaultValue: '100', description: 'tool bard version') 
+            }
+    environment{
+        workspace = pwd()
+        hlw='hello world'
+        UV='D:/Keil_v5/UV4/UV4.exe'
+        FROMELF='D:/Keil_v5/ARM/ARMCC/bin/fromelf.exe'
+        FILEHANDLE="C:/mybin/fileHandle.exe"
+        RAR="\"C:/Program Files/WinRAR/WinRAR.exe\""
+        version_file="version.txt"
+        build_info="Application/Inc/build_info.h"
+    }
+    stages {
+        stage('Build') {
+            steps {
+                bat """
+                cd ${workspace}
+                git checkout .
+                git clean -xdf
+                """
+                bat """
+                del ${version_file}
+                echo model:TOOL >> ${version_file}
+                echo build time:"%date:~0,10%-%time:~0,8%" >> ${version_file}
+                echo versin:"${params.toolversion}"  >> ${version_file}
+
+                echo #define COMPILE_TIME "%date:~0,10%-%time:~0,8%" >> ${build_info}
+                echo #define COMPILE_BY "%USERNAME%" >> ${build_info}
+                echo #define VERSION "${params.toolversion}"  >> ${build_info}
+                """
+
+                bat """
+                    echo "start build tool-board"
+                    echo %date:~0,10%-%time:~0,8%
+                    FOR /F "delims=" %%i IN ('git rev-list HEAD -n 1') DO set "Version=%%i"
+                    echo Version %Version%
+
+                    set UV_PRO_PATH=board.uvprojx
+                    set UV_TARGET=board
+                    echo Init building ...
+                    cd ${workspace}/MDK-ARM
+                    echo .>build_log.txt
+                    ${UV} -j0 -r %UV_PRO_PATH% -t %UV_TARGET% -o build_log.txt
+                    type build_log.txt
+                    copy .\\board\\board.hex .\\board\\tool.hex
+                    ${FROMELF} --bin -o  ./board/tool.bin ./board/board.axf
+                    ${FILEHANDLE} ./board/tool.bin rmtools${params.toolversion}
+                    ${RAR}  a -ag -ep1 ..\\Toolboard-V${params.toolversion}-.rar  board\\tool.hex board\\tool.bin ..\\version.txt
+                """
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo "echo publish"
+                archiveArtifacts artifacts: 'Toolboard*.rar', followSymlinks: false
+            }
+            post{
+                always{
+                    script{
+                    emailext (
+                        subject: '\'构建通知:${PROJECT_NAME} - Build # ${BUILD_NUMBER} - ${BUILD_STATUS}\'',
+                        body: '''
+                        (动化构建无需回复)
+                        项目名称:$PROJECT_NAME
+                        运行编号：$BUILD_NUMBER
+                        运行结果：$BUILD_STATUS
+                        触发原因:${CAUSE}
+                        构建日志地址:${BUILD_URL}console
+                        构建地址:$BUILD_URL
+                        ''',
+                        to: "ben@realman-robot.com",
+                        )
+                    }
+                }
+            }
+        }
+    }
+}

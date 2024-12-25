@@ -1,0 +1,6 @@
+*.d
+*.o
+*.crf
+*.axf
+*.htm
+Keil\MDK-ARM\board\
