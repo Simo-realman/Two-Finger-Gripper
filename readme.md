@@ -8,7 +8,7 @@
 
 ## Copyright and License Agreement
 
-The hardware source information and related materials of this project are licensed under the [OpenAtom Open Hardware License, Version 1.0](./LICENSE) .
+The hardware source information and related materials of this project are licensed under the [OpenAtom Open Hardware License, Version 1.0](License) .
 
 ## Introduction
 

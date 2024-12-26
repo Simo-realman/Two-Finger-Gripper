@@ -2,7 +2,7 @@
 
 ## 版权和许可协议
 
-本项目的硬件源信息和相关材料遵循 [OpenAtom Open Hardware License, Version 1.0](./LICENSE) 许可证。
+本项目的硬件源信息和相关材料遵循 [OpenAtom Open Hardware License, Version 1.0](License) 许可证。
 
 ## 简介
 
