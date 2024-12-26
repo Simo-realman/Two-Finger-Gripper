@@ -2,7 +2,7 @@
 
 ## 版权和许可协议
 
-本项目遵循MIT许可证，详情请阅读[开源声明](License.md)。
+本项目的硬件源信息和相关材料遵循 [OpenAtom Open Hardware License, Version 1.0](./LICENSE) 许可证。
 
 ## 简介
 

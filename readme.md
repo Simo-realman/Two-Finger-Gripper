@@ -8,7 +8,7 @@
 
 ## Copyright and License Agreement
 
-This project is licensed under the MIT License. For details, please read the [Open Source Statement](License.md).
+The hardware source information and related materials of this project are licensed under the [OpenAtom Open Hardware License, Version 1.0](./LICENSE) .
 
 ## Introduction
 
