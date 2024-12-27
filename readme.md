@@ -97,7 +97,7 @@ The two-finger parallel gripper uses a 6-pin aviation plug and a 6-pin PH2.0 ter
 - Fixedly installed at the bottom of the gripper mounting seat with a female header.
 - Connected to the 6-pin terminal male header output by the mechanical arm end cover to achieve internal wiring, avoiding interference caused by external wiring during the grasping process of the two-finger parallel gripper.
 
-<div align="center"> <img src="doc/image7.png" width = 500 /> </div>
+<div align="center"> <img src="doc/image7.jpg" width = 500 /> </div>
 <center>6-pin Aviation Plug</center>
 <div align="center"> <img src="doc/image8.png" width = 350 /> </div>
 <center>6-pin PH2.0 Terminal</center>
@@ -112,8 +112,8 @@ The wire sequence and functions of the 6-pin aviation plug and the 6-pin PH2.0 t
 |2|White|RS485_B|RS485 communication B-|
 |3|Red|DI1/DO1|I/O multiplexed interface 1|
 |4|Black|DI2/DO2|I/O multiplexed interface 2|
-|5|Blue|Power GND|Power negative pole|
-|6|Green|Power Input 24V|Power positive pole|
+|5|Green|Power GND|Power negative pole|
+|6|Blue|Power Input 24V|Power positive pole|
 
 ## Software Resources
 
