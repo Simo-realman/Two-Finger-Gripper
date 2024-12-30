@@ -90,7 +90,7 @@
 - 在手爪安装座底端固定安装母头。
 - 与机械臂端盖输出的6芯端子公头连接，实现内走线，避免了两指平行夹爪在抓取过程中外走线造成的干涉。
 
-<div align="center"> <img src="doc/image7.jpg" width = 500 /> </div>
+<div align="center"> <img src="doc/image7.png" width = 500 /> </div>
 <center>6芯航插</center>
 <div align="center"> <img src="doc/image8.png" width = 350 /> </div>
 <center>6芯PH2.0端子</center>
