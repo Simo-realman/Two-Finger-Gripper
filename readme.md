@@ -12,9 +12,9 @@ The hardware source information and related materials of this project are licens
 
 ## Introduction
 
-The Reilman Two-Finger Parallel Gripper is designed to provide users with easy-to-use and high-quality operational capabilities. The gripper is developed with the self-developed WHJ03 integrated joint as the core component, featuring high dynamic response, high load capacity, compact size, strong versatility, easy installation, and simple maintenance. According to task requirements, the gripper can be flexibly and conveniently deployed on complex robots, at the end of mechanical arms, or on PLC production lines, to address grasping, sorting, and handling needs in industrial, commercial, domestic, and educational scenarios. The robot uses a standard RS485 communication interface, supporting serial port protocol and Modbus RTU protocol. The simple and efficient interface and control commands allow users to quickly achieve control of the gripper.
+The Realman Two-Finger Parallel Gripper is designed to provide users with easy-to-use and high-quality operational capabilities. The gripper is developed with the self-developed WHJ03 integrated joint as the core component, featuring high dynamic response, high load capacity, compact size, strong versatility, easy installation, and simple maintenance. According to task requirements, the gripper can be flexibly and conveniently deployed on complex robots, at the end of mechanical arms, or on PLC production lines, to address grasping, sorting, and handling needs in industrial, commercial, domestic, and educational scenarios. The robot uses a standard RS485 communication interface, supporting serial port protocol and Modbus RTU protocol. The simple and efficient interface and control commands allow users to quickly achieve control of the gripper.
 <br>
-Reilman also provides a host computer software for the gripper, which can meet the operational needs for targets of different textures and shapes by setting various parameters such as gripping force, speed, position, etc.
+Realman also provides a host computer software for the gripper, which can meet the operational needs for targets of different textures and shapes by setting various parameters such as gripping force, speed, position, etc.
 <br>
 
 ![alt text](doc/image14.png)
@@ -168,7 +168,7 @@ The host computer software is a green, installation-free version, the compressed
     - **Open**: The gripper releases to the maximum opening position at the set fixed speed (maximum speed).
     - **Close**: The gripper closes to the minimum opening position at the set fixed speed (maximum speed).
     - **Torque Gripping**: The gripper grips with the set speed and torque, when the gripping force exceeds the set torque value, the gripper stops moving; when the gripper stops moving, if the gripping force is detected to be less than the torque value, the gripper will continue to grip until the gripping force exceeds the set torque value.
-    - Pass-through Energy: Developed for Reilman's high dynamic response function of remote operation, after turning on the `Pass-through Energy` function, the active gripper of the remote operation will respond at a high speed to the control of the passive gripper, facilitating users to carry out low-latency remote operations and data collection.
+    - Pass-through Energy: Developed for Realman's high dynamic response function of remote operation, after turning on the `Pass-through Energy` function, the active gripper of the remote operation will respond at a high speed to the control of the passive gripper, facilitating users to carry out low-latency remote operations and data collection.
 4. **Protocol/IO Control**:
     - **IO Interface Configuration**: Used to configure the input and output parameters of the two IO interfaces. The specific operation is as follows:
         - **Set**: 1) Select interface DIO/1 or DIO/2; 2) Select `Input Mode` or `Output Mode`, click `Mode Set`; 3) For the input mode, there is no need to set; for the output mode, you can set `Output High Level`, `Output Low Level`; 4) Click `Output Set` to complete the output parameter configuration of this interface.
@@ -188,7 +188,7 @@ The host computer software is a green, installation-free version, the compressed
 
 - For the communication protocol of the two-finger parallel gripper, please refer to the communication protocol section in the "Two-Finger Parallel Gripper User Manual V1.0".<br>
 
-- To control the two-finger parallel gripper through the mechanical arm (Reilman), the relevant communication protocol can be referred to as follows:
+- To control the two-finger parallel gripper through the mechanical arm (Realman), the relevant communication protocol can be referred to as follows:
 
 - 两指平行夹爪的相关通信协议，请参考《两指平行夹爪用户使用手册V1.0》中的通信协议章节。<br>
 
