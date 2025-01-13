@@ -31,7 +31,7 @@
 
 ![alt text](doc/image2.png)
 
-1. WHJ03 关节：WHJ03关节作为两指平行夹爪的核心动力模块，输出力和运动，详情请查阅[WHJ03 关节](https://develop.realman-robotics.com/joints/parameter/WHJ03/)；
+1. WHJ03 关节：WHJ03关节作为两指平行夹爪的核心动力模块，输出力和运动，详情请查阅[WHJ03 关节](https://develop.realman-robotics.com/zh/joints/parameter/WHJ03/)；
 2. 传动机构：传动机构是将关节的回转运动转为直线运动的主要机构；
 3. 控制板：控制板提供关节控制、RS485 通信、系统供电、扩展接口等功能；
 4. 通讯接口：通讯接口六芯航插头和六芯 PH2.0 端子，位置如图所示；
@@ -182,9 +182,9 @@
 
 - 通过机械臂（睿尔曼）控制两指平行夹爪相关通信协议，可根据需要参考如下对应内容：
 
-  - JSON协议：[末端工具指令集（选配）](https://develop.realman-robotics.com/robot/json/endTool.html)
-  - API2 (C、C++)：[末端工具夹爪配置](https://develop.realman-robotics.com/robot/api/c/classes/gripperControl.html)
-  - API2 (Python)：[末端工具夹爪配置](https://develop.realman-robotics.com/robot/api/python/classes/gripperControl.html)
+  - JSON协议：[末端工具指令集（选配）](https://develop.realman-robotics.com/zh/robot/json/endTool.html)
+  - API2 (C、C++)：[末端工具夹爪配置](https://develop.realman-robotics.com/zh/robot/api/c/classes/gripperControl.html)
+  - API2 (Python)：[末端工具夹爪配置](https://develop.realman-robotics.com/zh/robot/api/python/classes/gripperControl.html)
 
 ## 其他相关参考
 
@@ -208,7 +208,7 @@
     <tr>
         <th>1</th>
         <td>Software</td>
-        <td rowspan="4"> <a href="https://pan.baidu.com/s/1PIVQjrZOQJWhZMLZMvvwxQ?pwd=j5dg#list/path=%2F">下载地址</a> </td>
+        <td rowspan="4"> <a href="https://github.com/RealManRobot/Two-Finger-Gripper">下载地址</a> </td>
         <td>包括gripper_app、gripper_boot、gripper_tool以及两指平行夹爪上位机v1.0.3，用于设置、调试两指平行夹爪。</td>
     </tr>
     <tr>
