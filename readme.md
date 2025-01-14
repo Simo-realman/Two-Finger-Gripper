@@ -39,7 +39,7 @@ The main body structure of the two-finger parallel gripper is as follows:
 
 ![alt text](doc/image2_EN.png)
 
-1. WHJ03 Joint: The WHJ03 joint, as the core power module of the two-finger parallel gripper, provides force and motion. For details, please refer to [WHJ03 Joint](https://develop.realman-robotics.com/joints/parameter/WHJ03/);
+1. WHJ03 Joint: The WHJ03 joint, as the core power module of the two-finger parallel gripper, provides force and motion. For details, please refer to [WHJ03 Joint](https://develop.realman-robotics.com/en/joints/parameter/WHJ03/);
 2. Transmission Mechanism: The transmission mechanism is the main component that converts the joint's rotational motion into linear motion;
 3. Control Board: The control board provides joint control, RS485 communication, system power supply, and expansion interface functions;
 4. Communication Interface: The communication interface is a six-pin aviation plug and a six-pin PH2.0 terminal, as shown in the figure;
@@ -194,9 +194,9 @@ The host computer software is a green, installation-free version, the compressed
 
 - 通过机械臂（睿尔曼）控制两指平行夹爪相关通信协议，可根据需要参考如下对应内容：
 
-  - JSON Protocol: [End Tool Instruction Set (Optional)](https://develop.realman-robotics.com/robot/json/endTool.html)
-  - API2 (C, C++): [End Tool Gripper Configuration](https://develop.realman-robotics.com/robot/api/c/classes/gripperControl.html)
-  - API2 (Python): [End Tool Gripper Configuration](https://develop.realman-robotics.com/robot/api/python/classes/gripperControl.html)
+  - JSON Protocol: [End Tool Instruction Set (Optional)](https://develop.realman-robotics.com/en/robot/json/endTool.html)
+  - API2 (C, C++): [End Tool Gripper Configuration](https://develop.realman-robotics.com/en/robot/api/c/classes/gripperControl.html)
+  - API2 (Python): [End Tool Gripper Configuration](https://develop.realman-robotics.com/en/robot/api/python/classes/gripperControl.html)
 
 ## Other Related References
 
@@ -220,7 +220,7 @@ The related materials for the two-finger parallel gripper are as follows. Please
     <tr>
         <th>1</th>
         <td>Software</td>
-        <td rowspan="4"> <a href="https://pan.baidu.com/s/1PIVQjrZOQJWhZMLZMvvwxQ?pwd=j5dg#list/path=%2F">Download Address</a> </td>
+        <td rowspan="4"> <a href="https://github.com/RealManRobot/Two-Finger-Gripper">Download Address</a> </td>
         <td>Including gripper_app, gripper_boot, gripper_tool, and the two-finger parallel gripper host computer software v1.0.3, used for setting and debugging the two-finger parallel gripper.</td>
     </tr>
     <tr>
